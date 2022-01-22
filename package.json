@@ -1,0 +1,27 @@
+{
+  "name": "p5gatsby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "p5gatsby",
+  "author": "HollyHilts",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@loadable/component": "^5.15.0",
+    "gatsby": "^4.5.4",
+    "gatsby-plugin-image": "^1.11.0",
+    "gatsby-source-contentful": "^5.11.0",
+    "p5": "^1.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-p5-wrapper": "^2.4.1"
+  }
+}
