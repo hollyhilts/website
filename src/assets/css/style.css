@@ -1,3 +1,74 @@
 .main-title {
-    background-color: red;
+    color: red;
 }
+
+.main {
+    /* background: url('../andrei-damian-9GPlrc6TEQw-unsplash.jpeg'); */
+    background: hsla(148, 56%, 82%, 1);
+    background: linear-gradient(120deg, 
+        /* hsl(292, 10%, 57%, 1),  */
+        /* hsl(292, 10%, 57%, 1),  */
+        /* hsl(16, 88%, 57%, 1), */
+        /* hsl(148, 56%, 82%, 1),  */
+        hsl(35, 100%, 66%, 1),
+        hsl(104, 68%, 72%, 1), 
+        hsl(35, 100%, 66%, 1),
+        hsl(104, 68%, 72%, 1), 
+        hsl(35, 100%, 66%, 1),
+        hsl(104, 68%, 72%, 1));
+        /* hsl(190, 87%, 42%, 1),  */
+        /* hsl(316, 47%, 57%, 1),  */
+        /* hsl(16, 88%, 57%, 1)); */
+    background-size: 100% 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+   }
+   .banner h3 {
+    font-size: 3em;
+    color: blue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: banner 15s linear infinite;
+    -webkit-animation: banner 15s linear infinite;
+    animation: banner 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes banner {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes banner {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes banner {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
